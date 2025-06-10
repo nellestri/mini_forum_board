@@ -42,7 +42,7 @@
                             <i class="fas fa-home mr-1"></i>Go to Forum
                         </a>
                         <span class="text-gray-500">|</span>
-                        <span class="text-gray-700">Welcome, {{ Auth::user()->name }}!</span>
+                        <span class="text-gray-700">Welcome, !</span>
                     </div>
                 @else
                     <div class="flex items-center space-x-4">
@@ -59,11 +59,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-20">
+    <section class="gradient-bg text-black py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <div class="animate-float mb-8">
-                    <i class="fas fa-comments text-6xl mb-4 opacity-90"></i>
+                    <i class="fas fa-comments text-6xl mb-4 opacity-100"></i>
                 </div>
 
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">
@@ -95,13 +95,13 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
                     Why Choose Mini Forum?
                 </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                <p class="text-xl text-white max-w-2xl mx-auto">
                     Experience the best of community discussions with our feature-rich platform
                 </p>
             </div>
@@ -149,7 +149,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>
                     <div class="text-3xl font-bold text-yellow-400 mb-2">
-                        
+
                     </div>
                     <p class="text-gray-300">Active Members</p>
                 </div>
@@ -254,7 +254,7 @@
 
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
                 <p class="text-gray-400">
-                    &copy; {{ date('Y') }} Mini Forum. All rights reserved. Built with ❤️ for the community.
+                    &copy; {{ date('Y') }} Mini Forum. All rights reserved. Built for the community.
                 </p>
             </div>
         </div>
