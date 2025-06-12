@@ -40,7 +40,7 @@
             <div class="flex justify-between h-16">
                 <!-- Logo Section -->
                 <div class="flex items-center">
-                    <a href="{{ route('welcome') }}" class="flex items-center text-xl font-bold text-gray-800 hover:text-blue-600 transition duration-200">
+                    <a href="#" class="flex items-center text-xl font-bold text-gray-800 hover:text-blue-600 transition duration-200">
                         <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-comments text-white text-sm"></i>
                         </div>
@@ -50,7 +50,7 @@
 
                 <div class="flex items-center space-x-4">
                     @auth
-                        <a href="{{ route('forum.index') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-200">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-200">
                             <i class="fas fa-list-alt mr-1"></i>Browse Forum
                         </a>
 
@@ -90,7 +90,7 @@
 
                                 <!-- Menu Items -->
                                 <div class="py-1">
-                                    <a href="{{ route('user.dashboard') }}" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition duration-200">
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition duration-200">
                                         <i class="fas fa-tachometer-alt w-5 text-center mr-3 text-blue-500"></i>
                                         <div>
                                             <div class="font-medium">Dashboard</div>
@@ -99,7 +99,7 @@
                                     </a>
 
                                     @if(Auth::user()->isAdmin())
-                                        <a href="{{ route('admin.dashboard') }}" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-700 transition duration-200">
+                                        <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-700 transition duration-200">
                                             <i class="fas fa-cog w-5 text-center mr-3 text-red-500"></i>
                                             <div>
                                                 <div class="font-medium">Admin Panel</div>
@@ -111,7 +111,7 @@
 
                                 <!-- Logout -->
                                 <div class="border-t border-gray-100 py-1">
-                                    <form method="POST" action="{{ route('logout') }}" id="logout-form-welcome">
+                                    <form method="POST" action="#" id="logout-form-welcome">
                                         @csrf
                                         <button type="button" onclick="confirmLogoutWelcome()" class="w-full flex items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition duration-200">
                                             <i class="fas fa-sign-out-alt w-5 text-center mr-3 text-red-500"></i>
@@ -125,10 +125,10 @@
                             </div>
                         </div>
                     @else
-                        <a href="{{ route('login') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-200">
+                        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-200">
                             <i class="fas fa-sign-in-alt mr-1"></i>Login
                         </a>
-                        <a href="{{ route('register') }}" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <a href="#" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             <i class="fas fa-user-plus mr-1"></i>Register
                         </a>
                     @endauth
@@ -147,15 +147,15 @@
 
                     @guest
                         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                            <a href="{{ route('register') }}" class="bg-white text-indigo-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 text-center">
+                            <a href="#" class="bg-white text-indigo-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 text-center">
                                 Create Account
                             </a>
-                            <a href="{{ route('login') }}" class="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:bg-opacity-10 text-center">
+                            <a href="#" class="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:bg-opacity-10 text-center">
                                 Sign In
                             </a>
                         </div>
                     @else
-                        <a href="{{ route('forum.index') }}" class="bg-white text-indigo-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 inline-block">
+                        <a href="#" class="bg-white text-indigo-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 inline-block">
                             Go to Forum
                         </a>
                     @endguest
@@ -210,15 +210,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <div class="text-4xl font-bold text-indigo-600">{{ \App\Models\User::count() }}</div>
+                    <div class="text-4xl font-bold text-indigo-600"></div>
                     <div class="mt-2 text-lg text-gray-600">Users</div>
                 </div>
                 <div>
-                    <div class="text-4xl font-bold text-indigo-600">{{ \App\Models\Topic::count() }}</div>
+                    <div class="text-4xl font-bold text-indigo-600"></div>
                     <div class="mt-2 text-lg text-gray-600">Topics</div>
                 </div>
                 <div>
-                    <div class="text-4xl font-bold text-indigo-600">{{ \App\Models\Reply::count() }}</div>
+                    <div class="text-4xl font-bold text-indigo-600"></div>
                     <div class="mt-2 text-lg text-gray-600">Replies</div>
                 </div>
                 <div>
@@ -236,10 +236,10 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Join the Conversation?</h2>
             <p class="text-xl text-gray-600 mb-8">Create an account today and become part of our growing community.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="{{ route('register') }}" class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
+                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">
                     Create New Account
                 </a>
-                <a href="{{ route('login') }}" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md font-semibold hover:bg-gray-300">
+                <a href="# class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md font-semibold hover:bg-gray-300">
                     Sign In
                 </a>
             </div>
@@ -258,13 +258,13 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="{{ route('welcome') }}" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="{{ route('forum.index') }}" class="text-gray-400 hover:text-white">Forum</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Forum</a></li>
                         @guest
-                            <li><a href="{{ route('login') }}" class="text-gray-400 hover:text-white">Login</a></li>
-                            <li><a href="{{ route('register') }}" class="text-gray-400 hover:text-white">Register</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Login</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Register</a></li>
                         @else
-                            <li><a href="{{ route('user.dashboard') }}" class="text-gray-400 hover:text-white">Dashboard</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Dashboard</a></li>
                         @endguest
                     </ul>
                 </div>
